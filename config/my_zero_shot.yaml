@@ -1,0 +1,51 @@
+#self setting
+log_dir: '/mnt/sdc/your_name/temp_experiment_results/' 
+exp_name: 'ceshi_debug' #[ceshi_debug, tiaocan]
+run: 'all' # ['all', 'stage-1', 'stage-2', 'eval']
+load_path_stage_B: ""
+load_path_stage_A: ""
+
+# training
+bs: 6
+n_batches: 30
+epochs_stage1: 2  
+epochs_stage2: -1
+lr: 0.0001
+eval_bs: 64
+optimizer: adam
+weight_decay: 1e-5
+lr_scheduler: reduce
+best_model_criterion: score   # 'loss' or 'score'
+num_workers: 0
+
+
+# dataset settings
+dataset_name: VGGSound #AudioSetZSL", "VGGSound", "UCF", "ActivityNet"
+data_dir: "/mnt/sdc/your_name/Dataset/VGGSound/"
+feature_extraction_method: cls_features_non_averaged
+zero_shot_split: cls_split 
+
+batch_seqlen_test: max
+batch_seqlen_test_maxlen: 300
+batch_seqlen_test_trim: center
+batch_seqlen_train: max
+batch_seqlen_train_maxlen: 60
+batch_seqlen_train_trim: random
+
+# loss functions
+rec_loss: true
+reg_loss: true
+cross_entropy_loss: true
+margin_ratio: 2.0
+
+# general
+distance_fn: L2Loss
+device: 'cuda'
+seed:
+modality: both
+
+# model
+mapper_hidden_size: 512
+enc_hidden_size: 512
+
+
