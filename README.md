@@ -1,8 +1,8 @@
 # General-to-Specific Subsumption Learning for Audio-Visual Generalized Zero-Shot Learning
 This repository is the official implementation.
 <p float="left">
-  <img src="box.png" width="48%" />
-  <img src="subsumption.jpg" width="48%" />
+  <img src="box.png" width="58%" />
+  <img src="subsumption.jpg" width="40%" />
 </p>
 
 ## 1.Create environment
