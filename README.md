@@ -140,7 +140,7 @@ arguments:
 ```                                                                                                                                                                                                                         
                                                                                                                                                                                                                             
 ## Model Weights                                                                                                                                                                                                            
-Our fully trained model weights are available for download here.                                                                                                                                                            
+Our fully trained model weights are available for download [here](https://pan.baidu.com/s/1CTdoG2jFQWtc6opZ9FZHOg?pwd=2vzy ).                                                                                                                                                            
                                                                                                                                                                                                                             
 To use these pre-trained weights for evaluation, please specify the path of  'stage1 .pt' file directory in `load_path_stage_A`, and the 'stage2 .pt' file directory in `load_path_stage_B` (in config/my_zero_shot.yaml).  
 
